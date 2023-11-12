@@ -1,0 +1,37 @@
+// Start Testimonials
+.testimonials {
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: $dark_blue;
+  }
+  .box {
+    background-color: $Very_Pale_Red;
+    margin-top: 48px;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    img {
+      position: absolute;
+      top: -33px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 30px 0 15px;
+    }
+    p {
+      margin: 0;
+      color: #777;
+      font-size: 15px;
+    }
+  }
+  .testimonials_btn {
+    width: fit-content;
+    margin: 40px auto 0;
+  }
+}

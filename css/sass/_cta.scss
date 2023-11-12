@@ -1,0 +1,19 @@
+// Start Cta Section
+.cta {
+  background-color: $bright_red;
+  p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+  .cta-section_btn {
+    width: fit-content;
+    background-color: #fff;
+    color: hsl(12, 88%, 59%);
+    font-weight: 600;
+    &:hover {
+      color: hsl(12, 88%, 59%, 70%);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+// Start About Us Section
+.about {
+  color: $dark_blue;
+  .box_1 {
+    h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      @include breakpoints(large) {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      color: $Dark_Grayish_Blue;
+      font-size: 0.9375rem;
+      max-width: 20rem;
+      margin-top: 1.5rem;
+    }
+  }
+  .box_2 {
+    .box {
+      margin-bottom: 40px;
+      .head {
+        display: flex;
+        align-items: start;
+        gap: 1.5rem;
+        @include breakpoints(small) {
+          gap: 0.625rem;
+        }
+        span {
+          display: block;
+          color: #fff;
+          background-color: $bright_red;
+          padding: 0.3125rem 1.5rem;
+          border-radius: 1.875rem;
+        }
+        h3 {
+          font-size: 1.125rem;
+          font-weight: 700;
+          margin: 0.375rem 0 1.25rem;
+          position: relative;
+          @include breakpoints(small) {
+            font-size: 1rem;
+            &::before {
+              content: "";
+              position: absolute;
+              background-color: hsl(12deg 88% 59% / 10%);
+              width: calc(100% + 25px);
+              height: 34px;
+              z-index: -1;
+              top: -6px;
+              left: -25px;
+            }
+          }
+        }
+      }
+      p {
+        font-size: 0.9375rem;
+        color: $Dark_Grayish_Blue;
+        max-width: 31.25rem;
+        padding-left: 5.625rem;
+        @include breakpoints(small) {
+          max-width: 26.25rem;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

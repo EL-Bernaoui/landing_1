@@ -1,0 +1,70 @@
+// Start Footer
+footer {
+  background-color: $Very_Dark_Blue;
+  padding: 2.5rem 0;
+  .box_1 {
+    @include breakpoints(small) {
+      margin-bottom: 1.875rem;
+    }
+    .social_media {
+      img {
+        width: 1.125rem;
+        margin-right: 0.3125rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .box_2,
+  .box_3 {
+    ul {
+      padding: 0;
+      font-size: 0.875rem;
+      li {
+        a {
+          padding: 0.3125rem 0;
+          display: block;
+          color: #fff;
+          transition: 0.3s ease;
+          &:hover {
+            color: $bright_red;
+          }
+        }
+      }
+    }
+  }
+  .box_4 {
+    font-size: 0.875rem;
+    color: #fff;
+    text-align: end;
+    @include breakpoints(xlarge) {
+      text-align: center;
+      margin-top: 1.875rem;
+    }
+    form {
+      input {
+        padding: 0.75rem 1.875rem;
+        border-radius: 1.875rem;
+        border: none;
+        margin-right: 0.3125rem;
+        outline: none;
+        margin-bottom: 0.625rem;
+      }
+      button {
+        border: none;
+        padding: 0.625rem 1.5rem;
+        border-radius: 1.875rem;
+        background-color: $bright_red;
+        color: #fff;
+        transition: 0.5s ease;
+        &:hover {
+          background-color: hsl(12 88% 70%);
+        }
+      }
+    }
+    .copyright {
+      @include breakpoints(xlarge) {
+        margin-top: 1.875rem;
+      }
+    }
+  }
+}
